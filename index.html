@@ -4,10 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
+<body>   
     <div class="header">
-        
+       
+        <nav> 
+            <div class="navbar">
+            <div class="logo">
+                <img src="my_logo.png">
+            </div>
+            <div class="nav-content">
+                <ul>
+                    <li class="nav-items"><a href="#">Home</a></li>
+                    <li class="nav-items"><a href="#">About</a></li>
+                    <li class="nav-items"><a href="#">Service</a></li>
+                    <li class="nav-items"><a href="#">Portfolio</a></li>
+                    <li class="nav-items"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        </nav>
+    
+        <div class="front-content">
+            <p>Hi i'm <span class="my_name">Aman</span> <br>Srivastava from India</p>
+        </div>
+    </div> 
+
+    <!-- ----------about section------------------ -->
+
+    <div class="user-section">
+        <div class="user-image">
+            <img src="user.png">
+        </div>
+        <div class="about-section">
+            <H1 class="about">About Me</H1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, adipisci. Provident rei
+                ciendis quae quaerat? Facilis magnam exercitationem saepe molestiae est. Amet dolor totam al
+                ias doloremque? Explicabo officiis deserunt porro fugiat eius excepturi quisquam minima nisi 
+                ipsam. Ipsa earum ea reprehenderit!\
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolore sit pariatur, perspiciatis modi, ullam minima natus tempore ut adipisci beatae quae architecto optio ad sapiente nulla dolores. Id temporibus nostrum quasi necessitatibus, incidunt repellat. Exercitationem consequatur magnam perspiciatis itaque!
+            </p>
+                <div class="about-options">
+                    <p class="tabs activelink" onclick="opentab('skills')">Skills</p>
+                    <p class="tabs" onclick="opentab('experience')">Experience</p>
+                    <p class="tabs" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tabcontent activetabs" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                    </ul>
+                </div>
+                <div class="tabcontent" id="experience">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                    </ul>
+                </div>
+                <div class="tabcontent" id="education">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                        <li><span>UI/UX</span><br>Designing web and app interfaces</li>
+                    </ul>
+                </div> 
+        </div>
     </div>
+<!-- 
+------------Services------------- -->
+<div class="services">
+    <H1>My Services</H1>
+    <div class="service-containers">
+        <div class="service-boxes">
+            <i class="fa-brands fa-web-awesome" id="icon"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Sed, 
+                ullam!
+            </p>
+            <p><a href="#">Learn More</a></p>
+        </div>
+        <div class="service-boxes">
+            <i class="fa-brands fa-uikit" id="icon"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Sed, 
+                ullam!
+            </p>
+            <p><a href="#">Learn More</a></p>
+        </div>
+        <div class="service-boxes">
+            <i class="fa-brands fa-app-store-ios" id="icon"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Sed, 
+                ullam!
+            </p>
+            <p><a href="#">Learn More</a></p>
+        </div>
+    </div>
+</div>
+
+<!-- ------------work---------------- -->
+<div class="work-section">
+    <h1>My Work</h1>
+    <div class="work-containers">
+        <div class="work-box">
+            <img src="work-1.png">
+        </div>
+        <div class="work-box">
+            <img src="work-1.png">
+        </div>
+        <div class="work-box">
+            <img src="work-1.png">
+        </div>
+    </div>
+</div>
+    <script>
+        var tabs=document.getElementsByClassName("tabs");
+        var tabcontents=document.getElementsByClassName("tabcontent");
+
+        function opentab(tabname){
+            for(tab of tabs){
+                tab.classList.remove("activelink");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("activetabs");
+            }
+            event.currentTarget.classList.add("activelink");
+            document.getElementById(tabname).classList.add("activetabs");
+        }
+
+    </script>
 </body>
 </html>

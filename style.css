@@ -1,0 +1,179 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+body{
+   background-color: rgb(36, 30, 30);
+   background-image:url('img_background.png');
+   background-repeat: no-repeat;
+}
+.header{
+}
+.navbar{
+    display:flex;
+}
+.logo{
+    margin:0px 0px 0px 10%;
+    width:30%;
+}
+.nav-content ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    width:100%;
+}
+.nav-items{
+    list-style: none;
+    margin:48px 60px;
+}
+.nav-items a{
+    font-size:25px;
+    text-decoration:none;
+    color:#ababab;
+    position:relative;
+}
+.nav-items a::after{
+    content:"";
+    position:absolute;
+    left:0px;
+    bottom:-6px;
+    background: #ff004f;
+    width:0%;
+    height:3px;
+    transition: 0.5s;
+}
+.nav-items a:hover::after{
+    width:100%;
+}
+.front-content{
+    margin:20% 13%;
+    color:white;
+    font-size:40px;
+}
+.my_name{
+    color:#ff004f;
+}
+
+
+/* ------------about------------  */
+.user-section{
+    display:flex;
+    margin: 13% 13% 0px;
+}
+.user-image{
+    margin: 20% 0;
+}
+.user_image img{
+    height:30%;
+    border-radius:10px;
+}
+.about-section{
+    margin:20% 0px 20% 5%;
+}
+.about{
+    color:white;
+    font-weight:600;
+    font-size: 60px;
+    margin:20px 0px;
+}
+.about-section p{
+    color:#ababab;
+    font-size:20px;
+}
+.about-options{
+    display:flex;
+    margin-top:20px;
+}
+.about-options p{
+    margin:25px 30px 25px 0px;
+    color:#ababab;
+    position: relative;
+    cursor:pointer;
+}
+.tabs::after{
+    content:"";
+    height:3px;
+    bottom:-6px;
+    left:0px;
+    position:absolute;
+    background-color: #ff004f;
+    transition: 0.5s;
+}
+.tabs.activelink:hover::after{
+    width:50%;
+}
+
+.tabcontent{
+    display:none;
+}
+.tabcontent.activetabs{
+    display:block;
+}
+.tabcontent ul li{
+    color:#ababab;
+    margin:20px 0px;
+    list-style:none;
+    font-size:20px;
+}
+.tabcontent ul li span{
+    color:#b54769;
+    font-size:20px;
+}
+/* -----------services-------------- */
+.services{
+    margin:0px 13%;
+}
+.services H1{
+    font-size:60px;
+    font-weight:600px;
+    color:white;
+    margin-bottom:30px;
+}
+.service-containers{
+    display:flex;
+    color:white;
+}
+.service-boxes{
+    height:300px;
+    width:400px;
+    background-color:rgb(56, 55, 55);
+    margin-right:50px;
+    border-radius:6px;
+    padding:20px;
+    cursor: pointer;
+    transition: background 0.5s ,transform 0.5s;
+}
+.service-boxes:hover{
+    background:#ff004f;
+    transform:translateY(-10px);
+}
+#icon{
+    color:white;
+    font-size:60px;
+    margin-bottom:25px;
+}
+.service-boxes p{
+    margin:25px 0px;
+}
+.service-boxes p a{
+    text-decoration:none;
+    color:white;
+}
+
+/* ---------------work----------------- */
+.work-section{
+    margin:13% 13%;
+}
+.work-section h1{
+    font-size:60px;
+    font-weight:600px;
+    color:white;
+    margin-bottom:30px;
+}
+.work-containers{
+
+}
+.work-box{
+
+}

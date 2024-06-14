@@ -8,23 +8,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>   
-    <div class="header">
-       
+    <div class="header" id="header"> 
         <nav> 
             <div class="navbar">
             <div class="logo">
                 <img src="my_logo.png">
             </div>
             <div class="nav-content">
-                <ul>
-                    <li class="nav-items"><a href="#">Home</a></li>
-                    <li class="nav-items"><a href="#">About</a></li>
-                    <li class="nav-items"><a href="#">Service</a></li>
-                    <li class="nav-items"><a href="#">Portfolio</a></li>
-                    <li class="nav-items"><a href="#">Contact</a></li>
+                <ul id="sidemenu">
+                    <li class="nav-items"><a href="#header">Home</a></li>
+                    <li class="nav-items"><a href="#user-section">About</a></li>
+                    <li class="nav-items"><a href="#services">Service</a></li>
+                    <li class="nav-items"><a href="#work-section">Portfolio</a></li>
+                    <li class="nav-items"><a href="#contact-section">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-            </div>
-        </div>
+                </div>
+                </div>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
     
         <div class="front-content">
@@ -34,9 +35,9 @@
 
     <!-- ----------about section------------------ -->
 
-    <div class="user-section">
+    <div class="user-section" id="user-section">
         <div class="user-image">
-            <img src="user.png">
+            <img src="profile.jpg">
         </div>
         <div class="about-section">
             <H1 class="about">About Me</H1>
@@ -78,7 +79,7 @@
     </div>
 <!-- 
 ------------Services------------- -->
-<div class="services">
+<div class="services" id="services">
     <H1>My Services</H1>
     <div class="service-containers">
         <div class="service-boxes">
@@ -88,7 +89,7 @@
                 consectetur adipisicing elit. Sed, 
                 ullam!
             </p>
-            <p><a href="#">Learn More</a></p>
+            <p><a href="#contact-section">Know More</a></p>
         </div>
         <div class="service-boxes">
             <i class="fa-brands fa-uikit" id="icon"></i>
@@ -97,7 +98,7 @@
                 consectetur adipisicing elit. Sed, 
                 ullam!
             </p>
-            <p><a href="#">Learn More</a></p>
+            <p><a href="#contact-section">Know More</a></p>
         </div>
         <div class="service-boxes">
             <i class="fa-brands fa-app-store-ios" id="icon"></i>
@@ -106,26 +107,130 @@
                 consectetur adipisicing elit. Sed, 
                 ullam!
             </p>
-            <p><a href="#">Learn More</a></p>
+            <p><a href="#contact-section">Know More</a></p>
         </div>
     </div>
 </div>
 
 <!-- ------------work---------------- -->
-<div class="work-section">
+<div class="work-section" id="work-section">
     <h1>My Work</h1>
     <div class="work-containers">
         <div class="work-box">
-            <img src="work-1.png">
+            <img src="work1.jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Doloribus deleniti aut fuga harum repellendus molestias 
+                     Lorem ipsum dolor sit amet.
+                </p>
+                <a href="https://github.com/its-amans/Rock-Papper-Scissors"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
         <div class="work-box">
-            <img src="work-1.png">
+            <img src="work2.jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Doloribus deleniti aut fuga harum repellendus molestias 
+                     Lorem ipsum dolor sit amet.
+                </p>
+                <a href="https://github.com/its-amans/Lingual-Room"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
         <div class="work-box">
-            <img src="work-1.png">
+            <img src="work3.jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Doloribus deleniti aut fuga harum repellendus molestias Lorem ipsum dolor sit amet. 
+                </p>
+                <a href="https://github.com/its-amans/Amazon_clone"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
         </div>
     </div>
+    <div class="work-containers">
+        <div class="work-box">
+            <img src="work4.jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Doloribus deleniti aut fuga harum repellendus molestias 
+                     Lorem ipsum dolor sit amet.
+                </p>
+                <a href="https://github.com/its-amans/Tic-Tac-Toe"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work-box">
+            <img src="work5.jpg">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Doloribus deleniti aut fuga harum repellendus molestias 
+                     Lorem ipsum dolor sit amet.
+                </p>
+                <a href="https://github.com/its-amans/FOODYHUB"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+        <div class="work-box">
+            <img src="work6.png">
+            <div class="layer">
+                <h3>Social Media App</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                     Doloribus deleniti aut fuga harum repellendus molestias Lorem ipsum dolor sit amet. 
+                </p>
+                <a href="https://github.com/its-amans/Portfolio_website"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="final-button">
+        <button><a href="https://github.com/its-amans">See More</a></button>
+    </div>
 </div>
+
+
+<!-- --------------Contact Section---------------- -->
+<div class="contact-section" id="contact-section">
+    <div class="contact-detail">
+        <h1> Contact me</h1>
+        <div class="tele-contact">
+            <span><i class="fa-brands fa-telegram"></i></span>
+            <a href="#">amansrivastava8778@gmail.com</a>
+        </div>
+        <div class="tele-contact">
+            <span><i class="fa-solid fa-phone"></i></span>
+            <a href="#">0123456789</a>
+        </div>
+        <div class="social-contacts">
+            <a href="https://www.instagram.com/__aman__srivastava__/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://github.com/its-amans"><i class="fa-brands fa-github"></i></a>
+            <a href="https://linkedin.com/in/its-amans/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="Aman_Resume.pdf"class="download-cv-button" download>
+            Download CV
+        </a>
+    </div>
+
+    <div class="contact-form">
+       <form>
+        <input type="text" placeholder="Your Name" class="input-feild" required><br>
+        <input type="email" placeholder="Your Email" class="input-feild" required><br>
+        <textarea name="message" rows="13" placeholder="Your Message" class="textarea"></textarea>
+        <div class="submit-form">
+        <button> Submit</button>
+        </div>
+       </form>
+    </tr>
+    </div>
+</div>
+
+<!-- -------------------footer---------------- -->
+<footer>
+    <div class="footer">
+        <p>Copyright &copy Aman. Made with <span>&hearts;</span>.</p>
+    </div>
+</footer>
     <script>
         var tabs=document.getElementsByClassName("tabs");
         var tabcontents=document.getElementsByClassName("tabcontent");
@@ -140,7 +245,16 @@
             event.currentTarget.classList.add("activelink");
             document.getElementById(tabname).classList.add("activetabs");
         }
-
+    </script>
+    
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
     </script>
 </body>
 </html>

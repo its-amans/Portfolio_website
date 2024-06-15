@@ -348,11 +348,11 @@ body{
     justify-content: center;
     align-items:center;
     height:60px;
-    font-size:18px;
+    font-size:20px;
 }
 .footer span{
     color:#ff004f;
-    font-size:20px;
+    font-size:25px;
 }
 
 .nav-content .fa-solid{
